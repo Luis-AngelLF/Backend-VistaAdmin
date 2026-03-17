@@ -13,29 +13,21 @@
 # testing
 /coverage
 
-# next.js
+# Next.js overrides & Secrets
 /.next/
-/out/
+.next
+.env.local
+.env.*.local
 
-# production
+# Build output
+/out/
 /build
 
-# misc
-.DS_Store
-*.pem
+# Public auto-generated scripts
+/public/scripts/zk-worker.js
 
-# debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-.pnpm-debug.log*
-
-# env files (can opt-in for committing if needed)
-.env*
-
-# vercel
-.vercel
-
-# typescript
-*.tsbuildinfo
-next-env.d.ts
+# Binarios ZK (Bloquean el escáner de Tailwind V4)
+*.exe
+circom.exe
+/circuits/
+/public/zk/
